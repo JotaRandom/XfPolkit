@@ -26,10 +26,17 @@
 #include "lxpolkit-listener.h"
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <string.h>
 
 #include <sys/types.h>
 #include <pwd.h>
 #include <grp.h>
+
+#ifdef G_ENABLE_DEBUG
+#define DEBUG(...)  g_debug(__VA_ARGS__)
+#else
+#define DEBUG(...)
+#endif
 
 static void lxpolkit_listener_finalize  			(GObject *object);
 
@@ -62,7 +69,7 @@ static void on_user_changed(GtkComboBox* id_combo, DlgData* data);
 
 inline void dlg_data_free(DlgData* data)
 {
-    g_debug("dlg_data_free");
+    DEBUG("dlg_data_free");
     gtk_widget_destroy(data->dlg);
 
     g_signal_handlers_disconnect_by_func(data->cancellable, on_cancelled, data);
@@ -76,7 +83,7 @@ inline void dlg_data_free(DlgData* data)
 
 static void on_completed(PolkitAgentSession* session, gboolean authorized, DlgData* data)
 {
-    g_debug("on_complete");
+    DEBUG("on_complete");
     gtk_widget_set_sensitive(data->dlg, TRUE);
 
     if(!authorized && !g_cancellable_is_cancelled(data->cancellable))
@@ -96,26 +103,31 @@ static void on_completed(PolkitAgentSession* session, gboolean authorized, DlgDa
 
 static void on_request(PolkitAgentSession* session, gchar* request, gboolean echo_on, DlgData* data)
 {
-    g_debug("on_request: %s", request);
-    gtk_label_set_text(data->request_label, request);
+    const char* msg;
+    DEBUG("on_request: %s", request);
+    if(strcmp("Password: ", request) == 0)
+        msg = _("Password: ");
+    else
+        msg = request;
+    gtk_label_set_text(data->request_label, msg);
     gtk_entry_set_visibility(data->request, echo_on);
 }
 
 static void on_show_error(PolkitAgentSession* session, gchar* text, DlgData* data)
 {
-    g_debug("on error: %s", text);
+    DEBUG("on error: %s", text);
     show_msg(data->dlg, GTK_MESSAGE_ERROR, text);
 }
 
 static void on_show_info(PolkitAgentSession* session, gchar* text, DlgData* data)
 {
-    g_debug("on info: %s", text);
+    DEBUG("on info: %s", text);
     show_msg(data->dlg, GTK_MESSAGE_INFO, text);
 }
 
 void on_dlg_response(GtkDialog* dlg, int response, DlgData* data)
 {
-    g_debug("on_response: %d", response);
+    DEBUG("on_response: %d", response);
     if(response == GTK_RESPONSE_OK)
     {
         const char* request = gtk_entry_get_text(data->request);
@@ -128,7 +140,7 @@ void on_dlg_response(GtkDialog* dlg, int response, DlgData* data)
 
 void on_cancelled(GCancellable* cancellable, DlgData* data)
 {
-    g_debug("on_cancelled");
+    DEBUG("on_cancelled");
     if(data->session)
         polkit_agent_session_cancel(data->session);
     else
@@ -140,7 +152,7 @@ static void on_user_changed(GtkComboBox* id_combo, DlgData* data)
 {
     GtkTreeIter it;
     GtkTreeModel* model = gtk_combo_box_get_model(id_combo);
-    g_debug("on_user_changed");
+    DEBUG("on_user_changed");
     if(gtk_combo_box_get_active_iter(id_combo, &it))
     {
         PolkitIdentity* id;
@@ -178,7 +190,13 @@ static void initiate_authentication(PolkitAgentListener  *listener,
     GtkWidget *icon, *msg, *detail, *id_hbox;
     GList* l;
     DlgData* data = g_slice_new0(DlgData);
-    g_debug("init_authentication");
+    DEBUG("init_authentication");
+    DEBUG("action_id = %s", action_id);
+#ifdef G_ENABLE_DEBUG
+    char** p;
+    for(p = polkit_details_get_keys(details);*p;++p)
+        DEBUG("%s: %s", *p, polkit_details_lookup(details, *p));
+#endif
     data->listener = (LXPolkitListener*)listener;
     data->result = g_simple_async_result_new(listener, callback, user_data, initiate_authentication);
 
@@ -252,10 +270,10 @@ static void initiate_authentication(PolkitAgentListener  *listener,
     }
     else
     {
-        g_debug("no identities list, is this an error?");
+        DEBUG("no identities list, is this an error?");
         gtk_widget_hide(id_hbox);
-        dlg_data_free(data);
         g_simple_async_result_complete_in_idle(data->result);
+        dlg_data_free(data);
         return;
     }
     gtk_window_present(GTK_WINDOW(data->dlg));
@@ -266,7 +284,7 @@ static gboolean initiate_authentication_finish(PolkitAgentListener  *listener,
                                               GError              **error)
 {
     LXPolkitListener* self = (LXPolkitListener*)listener;
-    g_debug("init_authentication_finish");
+    DEBUG("init_authentication_finish");
     return !g_simple_async_result_propagate_error(G_SIMPLE_ASYNC_RESULT(res), error);
 }
 
