@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: LXPolkit\n"
@@ -22,9 +22,8 @@ msgid "LXPolKit"
 msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.h:2
-#, fuzzy
 msgid "Policykit Authentication Agent"
-msgstr "Policykit Authentifizierungsdienst"
+msgstr "PolicyKit-Authentifizierungsdienst"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
@@ -61,4 +60,3 @@ msgstr "Gruppe: %s"
 
 #~ msgid "Execute As:"
 #~ msgstr "以此身份執行："
-
