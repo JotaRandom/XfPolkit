@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXPolkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 01:53+0800\n"
+"POT-Creation-Date: 2010-04-07 23:10+0200\n"
 "PO-Revision-Date: 2010-03-29 00:47+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <sh.yaron@gmail.com>\n"
@@ -55,8 +55,7 @@ msgstr ""
 msgid "Password: "
 msgstr "סיסמה:"
 
-#: ../src/lxpolkit-listener.c:248
+#: ../src/lxpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "קבוצה: %s"
-

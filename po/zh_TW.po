@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 01:53+0800\n"
+"POT-Creation-Date: 2010-04-07 23:10+0200\n"
 "PO-Revision-Date: 2010-03-29 01:53+0800\n"
 "Last-Translator: Hong Jen Yee (PCMan) <pcman.tw@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,11 +51,10 @@ msgstr ""
 msgid "Password: "
 msgstr "密碼："
 
-#: ../src/lxpolkit-listener.c:248
+#: ../src/lxpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "群組：%s"
 
 #~ msgid "Execute As:"
 #~ msgstr "以此身份執行："
-
