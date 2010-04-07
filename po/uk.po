@@ -1,8 +1,7 @@
-# Copyright 2010 (C) 
+# Copyright 2010 (C)
 # This file is distributed under the same license as the PACKAGE package.
 # Yarema aka Knedlyk <yupadmin@gmail.com>
-#
-
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxpolkit\n"
@@ -29,7 +28,7 @@ msgstr "Авторизація"
 
 #: ../data/ui/lxpolkit.glade.h:2
 msgid "Identity:"
-msgstr "ID:"
+msgstr "Користувач:"
 
 #: ../src/lxpolkit.c:45
 msgid "Error"
