@@ -3,54 +3,59 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-07 23:10+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2010-04-07 23:41+0200\n"
+"Last-Translator: Y P <yupadmin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.0.1\n"
 
 #: ../data/lxpolkit.desktop.in.h:1
 msgid "LXPolKit"
-msgstr ""
+msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.h:2
 msgid "Policykit Authentication Agent"
-msgstr ""
+msgstr "Агент авторизації Policykit"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
-msgstr ""
+msgstr "Авторизація"
 
 #: ../data/ui/lxpolkit.glade.h:2
 msgid "Identity:"
-msgstr ""
+msgstr "ID:"
 
 #: ../src/lxpolkit.c:45
 msgid "Error"
-msgstr ""
+msgstr "Помилка"
 
 #: ../src/lxpolkit.c:48
 msgid "Information"
-msgstr ""
+msgstr "Інформація"
 
 #: ../src/lxpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
 msgstr ""
+"Авторизація не вдалася!\n"
+"Неправильний пароль?"
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
-msgstr ""
+msgstr "Пароль: "
 
 #: ../src/lxpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
-msgstr ""
+msgstr "Група: %s"
