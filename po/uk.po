@@ -1,17 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright 2010 (C)
 # This file is distributed under the same license as the PACKAGE package.
+<<<<<<< HEAD
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+=======
+# Yarema aka Knedlyk <yupadmin@gmail.com>
+# 
+>>>>>>> 5cc20c7f7a598405b0027e67485dc2d256bd2522
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lxpolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-07 23:10+0200\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2010-04-07 23:41+0200\n"
 "Last-Translator: Y P <yupadmin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: uk\n"
+=======
+"PO-Revision-Date: 2010-04-07 23:10+0200\n"
+"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"Language-Team: UKRAINIAN <ukrainian@li.org>\n"
+>>>>>>> 5cc20c7f7a598405b0027e67485dc2d256bd2522
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +43,11 @@ msgstr "Авторизація"
 
 #: ../data/ui/lxpolkit.glade.h:2
 msgid "Identity:"
+<<<<<<< HEAD
 msgstr "ID:"
+=======
+msgstr "Користувач:"
+>>>>>>> 5cc20c7f7a598405b0027e67485dc2d256bd2522
 
 #: ../src/lxpolkit.c:45
 msgid "Error"
@@ -53,7 +67,11 @@ msgstr ""
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
+<<<<<<< HEAD
 msgstr "Пароль: "
+=======
+msgstr "Пароль:"
+>>>>>>> 5cc20c7f7a598405b0027e67485dc2d256bd2522
 
 #: ../src/lxpolkit-listener.c:254
 #, c-format
