@@ -7,7 +7,7 @@ AM_CPPFLAGS = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	$(NULL)
 
-bin_PROGRAMS = lxpolkit
+libexec_PROGRAMS = lxpolkit
 lxpolkit_SOURCES = \
 	lxpolkit.c \
 	lxpolkit-listener.c \

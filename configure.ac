@@ -82,6 +82,7 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 AC_CONFIG_FILES([
     Makefile
     src/Makefile
+    data/lxpolkit.desktop
     data/Makefile
     data/ui/Makefile
     po/Makefile.in
