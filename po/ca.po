@@ -2,13 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-07 23:10+0200\n"
+"POT-Creation-Date: 2010-04-11 04:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +17,41 @@ msgstr ""
 
 #: ../data/lxpolkit.desktop.in.h:1
 msgid "LXPolKit"
-msgstr ""
+msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.h:2
 msgid "Policykit Authentication Agent"
-msgstr ""
+msgstr "Agent d'autenticació Policykit"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticació"
 
 #: ../data/ui/lxpolkit.glade.h:2
 msgid "Identity:"
-msgstr ""
+msgstr "Identitat:"
 
 #: ../src/lxpolkit.c:45
 msgid "Error"
-msgstr ""
+msgstr "Error"
 
 #: ../src/lxpolkit.c:48
 msgid "Information"
-msgstr ""
+msgstr "Informació"
 
 #: ../src/lxpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
 msgstr ""
+"Ha fallat l'autenticació\n"
+"Contrasenya incorrecta"
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
-msgstr ""
+msgstr "Contrasenya:"
 
 #: ../src/lxpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
-msgstr ""
+msgstr "Grup: %s"
