@@ -17,10 +17,7 @@ msgstr ""
 
 #: ../data/lxpolkit.desktop.in.h:1
 msgid "LXPolKit"
-msgstr ""
-" \t\r\n"
-"\r\n"
-"LXPolKit"
+msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.h:2
 msgid "Policykit Authentication Agent"
