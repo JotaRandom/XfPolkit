@@ -21,15 +21,15 @@ msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
-msgstr ""
+msgstr "Policykit Authentication Agent"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
-msgstr ""
+msgstr "Authenticatie"
 
 #: ../data/ui/lxpolkit.glade.h:2
 msgid "Identity:"
-msgstr ""
+msgstr "Identiteit:"
 
 #: ../src/lxpolkit.c:45
 msgid "Error"
@@ -44,6 +44,8 @@ msgid ""
 "Authentication failed!\n"
 "Wrong password?"
 msgstr ""
+"Authenticatie mislukt!\n"
+"Verkeerd wachtwoord?"
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
