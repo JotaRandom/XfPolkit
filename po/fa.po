@@ -8,12 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-07 23:10+0200\n"
-"PO-Revision-Date: 2010-07-06 14:23+0330\n"
-"Last-Translator: Hamidreza Davoodi <hrdavodi@gmail.com>\n"
+"PO-Revision-Date: 2010-07-06 18:02+0200\n"
+"Last-Translator: Hamidreza <n3gb0y@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.1\n"
 
 #: ../data/lxpolkit.desktop.in.h:1
 msgid "LXPolKit"
@@ -21,9 +24,8 @@ msgstr "ال‌اکس‌پول‌کیت"
 
 # :D !
 #: ../data/lxpolkit.desktop.in.h:2
-#, fuzzy
 msgid "Policykit Authentication Agent"
-msgstr "بسته‌ي عامل سیاست"
+msgstr "بسته‌ي سیاست اعتباردهی"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
@@ -57,4 +59,3 @@ msgstr "گذرواژه"
 #, c-format
 msgid "Group: %s"
 msgstr "گروه: %s"
-
