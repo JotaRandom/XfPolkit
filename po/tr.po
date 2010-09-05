@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
-msgstr "Şifre"
+msgstr "Şifre:"
 
 #: ../src/lxpolkit-listener.c:254
 #, c-format
