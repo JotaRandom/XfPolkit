@@ -2,18 +2,21 @@
 # Copyright (C) 2010 The LXDE Team.
 # This file is distributed under the same license as the LXPolkit package.
 # Sérgio Marques <smarquespt@gamial.com>, 2010.
-#
+# Adaptado ao acordo ortográfico de 1990
 msgid ""
 msgstr ""
 "Project-Id-Version: LXPolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-07 23:10+0200\n"
-"PO-Revision-Date: 2010-03-29 12:57-0300\n"
+"PO-Revision-Date: 2010-09-22 11:33-0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: Portugal\n"
 
 #: ../data/lxpolkit.desktop.in.h:1
 msgid "LXPolKit"
@@ -21,7 +24,7 @@ msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.h:2
 msgid "Policykit Authentication Agent"
-msgstr "Agente de Autenticação Policykit"
+msgstr "Agente de autenticação Policykit"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
@@ -45,13 +48,14 @@ msgid ""
 "Wrong password?"
 msgstr ""
 "Falha ao autenticar!\n"
-"Palavra-passe errada?"
+"Senha errada?"
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
-msgstr "Palavra-passe:"
+msgstr "Senha:"
 
 #: ../src/lxpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "Grupo: %s"
+
