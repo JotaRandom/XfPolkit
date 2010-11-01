@@ -20,9 +20,8 @@ msgid "LXPolKit"
 msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.in.h:2
-#, fuzzy
 msgid "Policykit Authentication Agent"
-msgstr "Policykit Authentication Agent"
+msgstr "Ověřovací agent PolicyKit"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
