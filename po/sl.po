@@ -8,12 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-31 05:46+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2011-02-04 16:45+0200\n"
+"Last-Translator: Klemen <klemen913@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../data/lxpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
@@ -21,11 +25,11 @@ msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
-msgstr "PolicyKit program overjanja"
+msgstr "Agent overitve PolicyKit"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
-msgstr "Overjanje"
+msgstr "Overitev"
 
 #: ../data/ui/lxpolkit.glade.h:2
 msgid "Identity:"
@@ -37,7 +41,7 @@ msgstr "Napaka"
 
 #: ../src/lxpolkit.c:48
 msgid "Information"
-msgstr "Informacije"
+msgstr "Podrobnosti"
 
 #: ../src/lxpolkit-listener.c:91
 msgid ""
@@ -45,11 +49,11 @@ msgid ""
 "Wrong password?"
 msgstr ""
 "Overitev ni uspela!\n"
-" Napačno geslo?"
+"Napačno geslo?"
 
 #: ../src/lxpolkit-listener.c:109
 msgid "Password: "
-msgstr "Geslo:"
+msgstr "Geslo: "
 
 #: ../src/lxpolkit-listener.c:254
 #, c-format
