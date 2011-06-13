@@ -1,22 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Dutch translation of the lxpolkit package.
+# Copyright (C) the author of the lxpolkit package.
+# This file is distributed under the same license as the 
+# lxpolkit package.
+# Pjotr, 2011.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lxpolkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-13 08:35+0000\n"
-"PO-Revision-Date: 2011-06-02 23:46+0200\n"
-"Last-Translator: Pjotr <>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: nl\n"
+"POT-Creation-Date: 2011-05-27 04:04+0000\n"
+"PO-Revision-Date: 2011-06-13 11:34+0200\n"
+"Last-Translator: Pjotr\n"
+"Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
 
 #: ../data/lxpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
@@ -24,7 +24,7 @@ msgstr "LXPolKit"
 
 #: ../data/lxpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
-msgstr "Policykit-Authenticatie-agent"
+msgstr "Policykit Authenticatie-agent"
 
 #: ../data/ui/lxpolkit.glade.h:1
 msgid "Authentication"
