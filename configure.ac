@@ -29,7 +29,21 @@ IT_PROG_INTLTOOL([0.40.0])
 # AC_SUBST(XLIB_CFLAGS)
 # AC_SUBST(XLIB_LIBS)
 
-pkg_modules="gtk+-2.0 >= 2.12.0"
+AC_ARG_ENABLE(gtk3,
+AC_HELP_STRING([--enable-gtk3],[enable to use gtk+-3.0 instead of gtk+-2.0]),
+[case "${enableval}" in
+  yes)  enable_gtk3=yes ;;
+  no)   enable_gtk3=no ;;
+  *) AC_MSG_ERROR([bad value "${enableval}" for --enable-gtk3, use "yes" (default) or "no".]) ;;
+esac],[])
+
+# Checks for libraries.
+if test "x$enable_gtk3" = "xyes" ; then
+  CFLAGS="$CFLAGS -DENABLE_GTK3"
+  pkg_modules="gtk+-3.0 >= 3.0.0"
+else
+  pkg_modules="gtk+-2.0 >= 2.12.0"
+fi
 PKG_CHECK_MODULES(GTK, [$pkg_modules])
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
@@ -101,6 +115,7 @@ else
     echo
     echo lxpolkit....................... : Version $VERSION
     echo
+    echo Enable GTK3 support.............: "$enable_gtk3"
     echo Enable debug....................: "$enable_debug"
     echo Prefix..........................: $prefix
     echo
