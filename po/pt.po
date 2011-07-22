@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXPolkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-07 23:10+0200\n"
+"POT-Creation-Date: 2011-07-22 21:29+0200\n"
 "PO-Revision-Date: 2011-05-14 02:17+0200\n"
 "Last-Translator: Sérgio <smarquespt@gmail.com>\n"
 "Language-Team: \n"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: Portugal\n"
 
-#: ../data/lxpolkit.desktop.in.h:1
+#: ../data/lxpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "LXPolKit"
 
-#: ../data/lxpolkit.desktop.in.h:2
+#: ../data/lxpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "Agente de autenticação Policykit"
 
