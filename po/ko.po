@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxpolkit.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 21:29+0200\n"
+"POT-Creation-Date: 2012-09-23 15:20+0200\n"
 "PO-Revision-Date: 2012-04-06 07:01+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: \n"
@@ -56,4 +56,3 @@ msgstr "암호:"
 #, c-format
 msgid "Group: %s"
 msgstr "그룹: %s"
-

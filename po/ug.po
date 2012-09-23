@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gheyret Kenji<gheyret@gmail.com>,2011.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxpolkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-09 21:06+0200\n"
+"POT-Creation-Date: 2012-09-23 15:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gheyret Kenji<gheyret@gmail.com>\n"
 "Language-Team:  Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -44,7 +44,8 @@ msgstr "ئۇچۇر"
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
-msgstr "سالاھىيەت دەلىللەش مەغلۇپ بولدى!\n"
+msgstr ""
+"سالاھىيەت دەلىللەش مەغلۇپ بولدى!\n"
 "ئىم خاتامۇ؟"
 
 #: ../src/lxpolkit-listener.c:109
