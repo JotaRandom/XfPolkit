@@ -65,8 +65,7 @@ AC_SUBST(POLKIT_LIBS)
 
 
 AC_ARG_ENABLE(debug,
-	[AC_HELP_STRING([--enable-debug],
-		[build libfm with debug support @<:@default=no@:>@])],
+	[AC_HELP_STRING([--enable-debug])],
 	[enable_debug="${enableval}"],
 	[enable_debug=no]
 )
