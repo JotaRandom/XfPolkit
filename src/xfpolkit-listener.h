@@ -1,7 +1,8 @@
 /*
- *      lx-polkit-listener.h
+ *      xf-polkit-listener.h
  *
  *      Copyright 2010 PCMan <pcman.tw@gmail.com>
+ *	Copyright 2014 Pablo Lezaeta <prflr88@gmail.com>
  *
  *      This program is free software; you can redistribute it and/or modify
  *      it under the terms of the GNU General Public License as published by
@@ -20,33 +21,33 @@
  */
 
 
-#ifndef __LX_POLKIT_LISTENER_H__
-#define __LX_POLKIT_LISTENER_H__
+#ifndef __XF_POLKIT_LISTENER_H__
+#define __XF_POLKIT_LISTENER_H__
 
 #define POLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE
 #include <polkitagent/polkitagent.h>
 
 G_BEGIN_DECLS
 
-#define LXPOLKIT_LISTENER_TYPE				(xfpolkit_listener_get_type())
-#define LXPOLKIT_LISTENER(obj)				(G_TYPE_CHECK_INSTANCE_CAST((obj),\
-			LXPOLKIT_LISTENER_TYPE, LXPolkitListener))
-#define LXPOLKIT_LISTENER_CLASS(klass)		(G_TYPE_CHECK_CLASS_CAST((klass),\
-			LXPOLKIT_LISTENER_TYPE, LXPolkitListenerClass))
-#define IS_LXPOLKIT_LISTENER(obj)			(G_TYPE_CHECK_INSTANCE_TYPE((obj),\
-			LXPOLKIT_LISTENER_TYPE))
-#define IS_LXPOLKIT_LISTENER_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE((klass),\
-			LXPOLKIT_LISTENER_TYPE))
+#define XFPOLKIT_LISTENER_TYPE				(xfpolkit_listener_get_type())
+#define XFPOLKIT_LISTENER(obj)				(G_TYPE_CHECK_INSTANCE_CAST((obj),\
+			XFPOLKIT_LISTENER_TYPE, XfPolkitListener))
+#define XFPOLKIT_LISTENER_CLASS(klass)		(G_TYPE_CHECK_CLASS_CAST((klass),\
+			XFPOLKIT_LISTENER_TYPE, XfPolkitListenerClass))
+#define IS_XFPOLKIT_LISTENER(obj)			(G_TYPE_CHECK_INSTANCE_TYPE((obj),\
+			XFPOLKIT_LISTENER_TYPE))
+#define IS_XFPOLKIT_LISTENER_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE((klass),\
+			XFPOLKIT_LISTENER_TYPE))
 
-typedef struct _LXPolkitListener			LXPolkitListener;
-typedef struct _LXPolkitListenerClass		LXPolkitListenerClass;
+typedef struct _XfPolkitListener			XfPolkitListener;
+typedef struct _XfPolkitListenerClass		XfPolkitListenerClass;
 
-struct _LXPolkitListener
+struct _XfPolkitListener
 {
 	PolkitAgentListener parent;
 };
 
-struct _LXPolkitListenerClass
+struct _XfPolkitListenerClass
 {
 	PolkitAgentListenerClass parent_class;
 };
@@ -56,4 +57,4 @@ PolkitAgentListener* xfpolkit_listener_new(void);
 
 G_END_DECLS
 
-#endif /* __LX_POLKIT_LISTENER_H__ */
+#endif /* __XF_POLKIT_LISTENER_H__ */

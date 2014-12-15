@@ -1,7 +1,8 @@
 /*
- *      lx-polkit-listener.c
+ *      xf-polkit-listener.c
  *
  *      Copyright 2010 PCMan <pcman.tw@gmail.com>
+ *	Copyright 2014 Pablo Lezaeta <prflr88@gmail.com>
  *
  *      This program is free software; you can redistribute it and/or modify
  *      it under the terms of the GNU General Public License as published by
@@ -40,12 +41,12 @@
 
 static void xfpolkit_listener_finalize  			(GObject *object);
 
-G_DEFINE_TYPE(LXPolkitListener, xfpolkit_listener, POLKIT_AGENT_TYPE_LISTENER);
+G_DEFINE_TYPE(XfPolkitListener, xfpolkit_listener, POLKIT_AGENT_TYPE_LISTENER);
 
 typedef struct _DlgData DlgData;
 struct _DlgData
 {
-    LXPolkitListener* listener;
+    XfPolkitListener* listener;
     GSimpleAsyncResult* result;
     GtkWidget* dlg;
     GtkWidget* id;
@@ -197,7 +198,7 @@ static void initiate_authentication(PolkitAgentListener  *listener,
     for(p = polkit_details_get_keys(details);*p;++p)
         DEBUG("%s: %s", *p, polkit_details_lookup(details, *p));
 #endif
-    data->listener = (LXPolkitListener*)listener;
+    data->listener = (XfPolkitListener*)listener;
     data->result = g_simple_async_result_new(listener, callback, user_data, initiate_authentication);
 
     data->action_id = g_strdup(action_id);
@@ -283,12 +284,12 @@ static gboolean initiate_authentication_finish(PolkitAgentListener  *listener,
                                               GAsyncResult         *res,
                                               GError              **error)
 {
-    LXPolkitListener* self = (LXPolkitListener*)listener;
+    XfPolkitListener* self = (XfPolkitListener*)listener;
     DEBUG("init_authentication_finish");
     return !g_simple_async_result_propagate_error(G_SIMPLE_ASYNC_RESULT(res), error);
 }
 
-static void xfpolkit_listener_class_init(LXPolkitListenerClass *klass)
+static void xfpolkit_listener_class_init(XfPolkitListenerClass *klass)
 {
 	GObjectClass *g_object_class;
     PolkitAgentListenerClass* pkal_class;
@@ -303,23 +304,23 @@ static void xfpolkit_listener_class_init(LXPolkitListenerClass *klass)
 
 static void xfpolkit_listener_finalize(GObject *object)
 {
-	LXPolkitListener *self;
+	XfPolkitListener *self;
 
 	g_return_if_fail(object != NULL);
-	g_return_if_fail(IS_LXPOLKIT_LISTENER(object));
+	g_return_if_fail(IS_XFPOLKIT_LISTENER(object));
 
-	self = LXPOLKIT_LISTENER(object);
+	self = XFPOLKIT_LISTENER(object);
 
 	G_OBJECT_CLASS(xfpolkit_listener_parent_class)->finalize(object);
 }
 
 
-static void xfpolkit_listener_init(LXPolkitListener *self)
+static void xfpolkit_listener_init(XfPolkitListener *self)
 {
 }
 
 
 PolkitAgentListener *xfpolkit_listener_new(void)
 {
-	return g_object_new(LXPOLKIT_LISTENER_TYPE, NULL);
+	return g_object_new(XFPOLKIT_LISTENER_TYPE, NULL);
 }

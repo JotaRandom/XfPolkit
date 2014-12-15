@@ -85,3 +85,4 @@ po/stamp-*
 .deps
 config.h.in~
 configure.ac~
+data/ui/Makefile.am~
