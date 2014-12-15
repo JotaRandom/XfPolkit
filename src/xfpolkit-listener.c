@@ -172,6 +172,7 @@ static void on_user_changed(GtkComboBox* id_combo, DlgData* data)
         g_signal_connect(data->session, "request", G_CALLBACK(on_request), data);
         g_signal_connect(data->session, "show-error", G_CALLBACK(on_show_error), data);
         g_signal_connect(data->session, "show-info", G_CALLBACK(on_show_info), data);
+        
         polkit_agent_session_initiate(data->session);
     }
 }

@@ -86,3 +86,7 @@ po/stamp-*
 config.h.in~
 configure.ac~
 data/ui/Makefile.am~
+*.Po
+src/.dirstamp
+autogen.sh~
+src/xml-purge

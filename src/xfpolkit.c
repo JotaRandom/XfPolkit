@@ -36,9 +36,14 @@ static GOptionEntry option_entries[] =
     { NULL }
 };
 
+static PolkitAgentListener *listener;
+static PolkitSubject* session;
+
+
 void show_msg(GtkWindow* parent, GtkMessageType type, const char* msg)
 {
-    GtkWidget* dlg = gtk_message_dialog_new(parent, GTK_DIALOG_MODAL, type, GTK_BUTTONS_OK, msg);
+    GtkWidget* dlg = gtk_message_dialog_new(parent, GTK_DIALOG_MODAL, type,
+						GTK_BUTTONS_OK, "%s", msg);
     const char* title = NULL;
     switch(type)
     {
@@ -76,8 +81,7 @@ int main(int argc, char** argv)
     }
 
     listener = xfpolkit_listener_new();
-    session = polkit_unix_session_new_for_process_sync(getpid(), NULL, NULL);
-
+    session = polkit_unix_session_new_for_process_sync(getpid(), NULL, &err);
     if(!polkit_agent_register_listener(listener, session, NULL, &err))
     {
         /* show error msg */
