@@ -60,7 +60,9 @@ core.*
 core
 *.core
 *.desktop
+*/*.desktop
 *.desktop.in
+*/*.desktop.in
 *.service
 *.appdata.xml
 gtk-doc.make
