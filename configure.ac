@@ -5,7 +5,7 @@ prog_name = lxpolkit
 
 AC_PREREQ([2.63])
 AC_INIT([lxpolkit], [0.1.0], [http://lxde.org/])
-AM_INIT_AUTOMAKE([-Wall -Werror foreign no-dist-gzip dist-xz])
+AM_INIT_AUTOMAKE([-Wall  foreign no-dist-gzip dist-xz])
 
 AC_CONFIG_HEADERS([config.h])
 
