@@ -84,4 +84,4 @@ po/stamp-*
 .libs
 .deps
 config.h.in~
-
+configure.ac~
