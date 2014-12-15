@@ -4,7 +4,7 @@
 prog_name = xfpolkit
 
 AC_PREREQ([2.63])
-AC_INIT([xfpolkit], [0.0.2.1], [http://xfce.org/])
+AC_INIT([xfpolkit], [0.0.3], [http://xfce.org/])
 AM_INIT_AUTOMAKE([-Wall  foreign no-dist-gzip dist-xz subdir-objects])
 
 AC_CONFIG_HEADERS([config.h])
