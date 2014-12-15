@@ -17,31 +17,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/lxpolkit.desktop.in.in.h:1
+#: ../data/xfpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "የለክስ ፖልኪት"
 
-#: ../data/lxpolkit.desktop.in.in.h:2
+#: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "የፖሊሲኪት አረጋጋጭ"
 
-#: ../data/ui/lxpolkit.glade.h:1
+#: ../data/ui/xfpolkit.glade.h:1
 msgid "Authentication"
 msgstr "ማረጋገጥ"
 
-#: ../data/ui/lxpolkit.glade.h:2
+#: ../data/ui/xfpolkit.glade.h:2
 msgid "Identity:"
 msgstr "ማንነት፦"
 
-#: ../src/lxpolkit.c:45
+#: ../src/xfpolkit.c:45
 msgid "Error"
 msgstr "ስህተት"
 
-#: ../src/lxpolkit.c:48
+#: ../src/xfpolkit.c:48
 msgid "Information"
 msgstr "መረጃ"
 
-#: ../src/lxpolkit-listener.c:91
+#: ../src/xfpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
@@ -49,11 +49,11 @@ msgstr ""
 "ማረጋገጥ አልተቻለም!\n"
 " የተሳሳተ የይለፍ ቃል?"
 
-#: ../src/lxpolkit-listener.c:109
+#: ../src/xfpolkit-listener.c:109
 msgid "Password: "
 msgstr "የይለፍ ቃል:"
 
-#: ../src/lxpolkit-listener.c:254
+#: ../src/xfpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "ግሩፕ፦ %s"

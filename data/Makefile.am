@@ -1,6 +1,6 @@
 FULL_LIBEXECDIR=$(libexecdir)
 
-xfpolkit.desktop.in : lxpolkit.desktop.in.in
+xfpolkit.desktop.in : xfpolkit.desktop.in.in
 		cat xfpolkit.desktop.in.in | sed 's,@FULL_LIBEXECDIR@,$(FULL_LIBEXECDIR),' > $@
 
 NULL=

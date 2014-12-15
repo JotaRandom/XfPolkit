@@ -28,7 +28,7 @@
 
 G_BEGIN_DECLS
 
-#define LXPOLKIT_LISTENER_TYPE				(lxpolkit_listener_get_type())
+#define LXPOLKIT_LISTENER_TYPE				(xfpolkit_listener_get_type())
 #define LXPOLKIT_LISTENER(obj)				(G_TYPE_CHECK_INSTANCE_CAST((obj),\
 			LXPOLKIT_LISTENER_TYPE, LXPolkitListener))
 #define LXPOLKIT_LISTENER_CLASS(klass)		(G_TYPE_CHECK_CLASS_CAST((klass),\
@@ -51,8 +51,8 @@ struct _LXPolkitListenerClass
 	PolkitAgentListenerClass parent_class;
 };
 
-GType lxpolkit_listener_get_type(void);
-PolkitAgentListener* lxpolkit_listener_new(void);
+GType xfpolkit_listener_get_type(void);
+PolkitAgentListener* xfpolkit_listener_new(void);
 
 G_END_DECLS
 

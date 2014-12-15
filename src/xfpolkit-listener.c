@@ -23,7 +23,7 @@
 #include <config.h>
 #endif
 
-#include "lxpolkit-listener.h"
+#include "xfpolkit-listener.h"
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <string.h>
@@ -38,9 +38,9 @@
 #define DEBUG(...)
 #endif
 
-static void lxpolkit_listener_finalize  			(GObject *object);
+static void xfpolkit_listener_finalize  			(GObject *object);
 
-G_DEFINE_TYPE(LXPolkitListener, lxpolkit_listener, POLKIT_AGENT_TYPE_LISTENER);
+G_DEFINE_TYPE(LXPolkitListener, xfpolkit_listener, POLKIT_AGENT_TYPE_LISTENER);
 
 typedef struct _DlgData DlgData;
 struct _DlgData
@@ -59,7 +59,7 @@ struct _DlgData
     PolkitAgentSession* session;
 };
 
-/* defined in lxpolkit.c */
+/* defined in xfpolkit.c */
 void show_msg(GtkWindow* parent, GtkMessageType type, const char* msg);
 
 static void on_cancelled(GCancellable* cancellable, DlgData* data);
@@ -207,7 +207,7 @@ static void initiate_authentication(PolkitAgentListener  *listener,
     data->cookie = g_strdup(cookie);
 
     /* create the dialog, load from GtkBuilder ui definition file. */
-    gtk_builder_add_from_file(b, PACKAGE_UI_DIR "/lxpolkit.ui", NULL);
+    gtk_builder_add_from_file(b, PACKAGE_UI_DIR "/xfpolkit.ui", NULL);
     data->dlg = (GtkWidget*)gtk_builder_get_object(b, "dlg");
     icon = (GtkWidget*)gtk_builder_get_object(b, "icon");
     msg = (GtkWidget*)gtk_builder_get_object(b, "msg");
@@ -288,12 +288,12 @@ static gboolean initiate_authentication_finish(PolkitAgentListener  *listener,
     return !g_simple_async_result_propagate_error(G_SIMPLE_ASYNC_RESULT(res), error);
 }
 
-static void lxpolkit_listener_class_init(LXPolkitListenerClass *klass)
+static void xfpolkit_listener_class_init(LXPolkitListenerClass *klass)
 {
 	GObjectClass *g_object_class;
     PolkitAgentListenerClass* pkal_class;
 	g_object_class = G_OBJECT_CLASS(klass);
-	g_object_class->finalize = lxpolkit_listener_finalize;
+	g_object_class->finalize = xfpolkit_listener_finalize;
 
     pkal_class = POLKIT_AGENT_LISTENER_CLASS(klass);
     pkal_class->initiate_authentication = initiate_authentication;
@@ -301,7 +301,7 @@ static void lxpolkit_listener_class_init(LXPolkitListenerClass *klass)
 }
 
 
-static void lxpolkit_listener_finalize(GObject *object)
+static void xfpolkit_listener_finalize(GObject *object)
 {
 	LXPolkitListener *self;
 
@@ -310,16 +310,16 @@ static void lxpolkit_listener_finalize(GObject *object)
 
 	self = LXPOLKIT_LISTENER(object);
 
-	G_OBJECT_CLASS(lxpolkit_listener_parent_class)->finalize(object);
+	G_OBJECT_CLASS(xfpolkit_listener_parent_class)->finalize(object);
 }
 
 
-static void lxpolkit_listener_init(LXPolkitListener *self)
+static void xfpolkit_listener_init(LXPolkitListener *self)
 {
 }
 
 
-PolkitAgentListener *lxpolkit_listener_new(void)
+PolkitAgentListener *xfpolkit_listener_new(void)
 {
 	return g_object_new(LXPOLKIT_LISTENER_TYPE, NULL);
 }

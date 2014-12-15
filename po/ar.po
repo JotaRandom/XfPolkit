@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: lxde.lxpolkit.ar\n"
+"Project-Id-Version: lxde.xfpolkit.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:20+0200\n"
 "PO-Revision-Date: 2010-04-20 14:34+0300\n"
@@ -16,31 +16,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/lxpolkit.desktop.in.in.h:1
+#: ../data/xfpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "LXPolKit"
 
-#: ../data/lxpolkit.desktop.in.in.h:2
+#: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "أداة توثيق Policykit"
 
-#: ../data/ui/lxpolkit.glade.h:1
+#: ../data/ui/xfpolkit.glade.h:1
 msgid "Authentication"
 msgstr "توثيق"
 
-#: ../data/ui/lxpolkit.glade.h:2
+#: ../data/ui/xfpolkit.glade.h:2
 msgid "Identity:"
 msgstr "الهوية:"
 
-#: ../src/lxpolkit.c:45
+#: ../src/xfpolkit.c:45
 msgid "Error"
 msgstr "خطأ"
 
-#: ../src/lxpolkit.c:48
+#: ../src/xfpolkit.c:48
 msgid "Information"
 msgstr "معلومات"
 
-#: ../src/lxpolkit-listener.c:91
+#: ../src/xfpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
@@ -48,11 +48,11 @@ msgstr ""
 "فشل التوثيق!\n"
 "كلمة المرور خاطئة؟"
 
-#: ../src/lxpolkit-listener.c:109
+#: ../src/xfpolkit-listener.c:109
 msgid "Password: "
 msgstr "كلمة المرور:"
 
-#: ../src/lxpolkit-listener.c:254
+#: ../src/xfpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "المجموعة: %s"

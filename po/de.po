@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: LXPolkit\n"
+"Project-Id-Version: XfPolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:20+0200\n"
 "PO-Revision-Date: 2010-03-28 21:13+0100\n"
@@ -18,31 +18,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: German\n"
 
-#: ../data/lxpolkit.desktop.in.in.h:1
+#: ../data/xfpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "LXPolKit"
 
-#: ../data/lxpolkit.desktop.in.in.h:2
+#: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "PolicyKit-Authentifizierungsdienst"
 
-#: ../data/ui/lxpolkit.glade.h:1
+#: ../data/ui/xfpolkit.glade.h:1
 msgid "Authentication"
 msgstr "Authentifizierung"
 
-#: ../data/ui/lxpolkit.glade.h:2
+#: ../data/ui/xfpolkit.glade.h:2
 msgid "Identity:"
 msgstr "Identität:"
 
-#: ../src/lxpolkit.c:45
+#: ../src/xfpolkit.c:45
 msgid "Error"
 msgstr "Fehler"
 
-#: ../src/lxpolkit.c:48
+#: ../src/xfpolkit.c:48
 msgid "Information"
 msgstr "Hinweis"
 
-#: ../src/lxpolkit-listener.c:91
+#: ../src/xfpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
@@ -50,11 +50,11 @@ msgstr ""
 "Authentifizierung fehlgeschlagen!\n"
 "Falsches Passwort?"
 
-#: ../src/lxpolkit-listener.c:109
+#: ../src/xfpolkit-listener.c:109
 msgid "Password: "
 msgstr "Passwort:"
 
-#: ../src/lxpolkit-listener.c:254
+#: ../src/xfpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "Gruppe: %s"

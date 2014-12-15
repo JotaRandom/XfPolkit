@@ -1,11 +1,11 @@
-# Slovenian translation of lxpolkit.
+# Slovenian translation of xfpolkit.
 # Copyright (C) 2011 - 2013 Free Software Foundation, Inc.
-# This file is distributed under the same license as the lxpolkit package.
+# This file is distributed under the same license as the xfpolkit package.
 # Klemen Košir <klemen913@gmail.com>, 2011 - 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: lxpolkit\n"
+"Project-Id-Version: xfpolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:20+0200\n"
 "PO-Revision-Date: 2011-11-19 23:32+0100\n"
@@ -18,31 +18,31 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
-#: ../data/lxpolkit.desktop.in.in.h:1
+#: ../data/xfpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "LXPolKit"
 
-#: ../data/lxpolkit.desktop.in.in.h:2
+#: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "Agent overitve PolicyKit"
 
-#: ../data/ui/lxpolkit.glade.h:1
+#: ../data/ui/xfpolkit.glade.h:1
 msgid "Authentication"
 msgstr "Overitev"
 
-#: ../data/ui/lxpolkit.glade.h:2
+#: ../data/ui/xfpolkit.glade.h:2
 msgid "Identity:"
 msgstr "Uporabnik:"
 
-#: ../src/lxpolkit.c:45
+#: ../src/xfpolkit.c:45
 msgid "Error"
 msgstr "Napaka"
 
-#: ../src/lxpolkit.c:48
+#: ../src/xfpolkit.c:48
 msgid "Information"
 msgstr "Podrobnosti"
 
-#: ../src/lxpolkit-listener.c:91
+#: ../src/xfpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
@@ -50,11 +50,11 @@ msgstr ""
 "Overitev ni uspela!\n"
 "Ali je geslo pravilno?"
 
-#: ../src/lxpolkit-listener.c:109
+#: ../src/xfpolkit-listener.c:109
 msgid "Password: "
 msgstr "Geslo: "
 
-#: ../src/lxpolkit-listener.c:254
+#: ../src/xfpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "Skupina: %s"

@@ -2,25 +2,25 @@ NULL=
 
 AM_CPPFLAGS = \
 	-I$(srcdir) \
-	-DPACKAGE_DATA_DIR=\""$(datadir)/lxpolkit"\" \
-	-DPACKAGE_UI_DIR=\""$(datadir)/lxpolkit/ui"\" \
+	-DPACKAGE_DATA_DIR=\""$(datadir)/xfpolkit"\" \
+	-DPACKAGE_UI_DIR=\""$(datadir)/xfpolkit/ui"\" \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	$(NULL)
 
-libexec_PROGRAMS = lxpolkit
-lxpolkit_SOURCES = \
-	lxpolkit.c \
-	lxpolkit-listener.c \
-	lxpolkit-listener.h \
+libexec_PROGRAMS = xfpolkit
+xfpolkit_SOURCES = \
+	xfpolkit.c \
+	xfpolkit-listener.c \
+	xfpolkit-listener.h \
 	$(NULL)
 
-lxpolkit_CFLAGS = \
+xfpolkit_CFLAGS = \
 	$(GTK_CFLAGS) \
 	$(POLKIT_CFLAGS) \
 	-Werror-implicit-function-declaration \
 	$(NULL)
 
-lxpolkit_LDADD = \
+xfpolkit_LDADD = \
 	$(GTK_LIBS) \
 	$(POLKIT_LIBS) \
 	$(INTLLIBS) \

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+_Name=XfPolKit
+_Comment=Policykit Authentication Agent
+Exec=/usr/lib/xfpolkit/xfpolkit
+Icon=gtk-dialog-authentication
+NotShowIn=GNOME;KDE;MATE;Razor;LxQT;

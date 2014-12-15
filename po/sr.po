@@ -18,31 +18,31 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: ../data/lxpolkit.desktop.in.in.h:1
+#: ../data/xfpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "ЛИкс-ПолКит"
 
-#: ../data/lxpolkit.desktop.in.in.h:2
+#: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "ПолисиКит агент за аутентификацију"
 
-#: ../data/ui/lxpolkit.glade.h:1
+#: ../data/ui/xfpolkit.glade.h:1
 msgid "Authentication"
 msgstr "Аутентификација"
 
-#: ../data/ui/lxpolkit.glade.h:2
+#: ../data/ui/xfpolkit.glade.h:2
 msgid "Identity:"
 msgstr "Идентитет:"
 
-#: ../src/lxpolkit.c:45
+#: ../src/xfpolkit.c:45
 msgid "Error"
 msgstr "Грешка"
 
-#: ../src/lxpolkit.c:48
+#: ../src/xfpolkit.c:48
 msgid "Information"
 msgstr "Подаци"
 
-#: ../src/lxpolkit-listener.c:91
+#: ../src/xfpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
@@ -50,11 +50,11 @@ msgstr ""
 "Аутентификација није успела!\n"
 "Можда је лозинка погрешна?"
 
-#: ../src/lxpolkit-listener.c:109
+#: ../src/xfpolkit-listener.c:109
 msgid "Password: "
 msgstr "Лозинка: "
 
-#: ../src/lxpolkit-listener.c:254
+#: ../src/xfpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "Група: %s"

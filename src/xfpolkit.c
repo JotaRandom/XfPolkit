@@ -1,5 +1,5 @@
 /*
- *      lxpolkit.c
+ *      xfpolkit.c
  *
  *      Copyright 2010 PCMan <pcman.tw@gmail.com>
  *
@@ -28,7 +28,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include "lxpolkit-listener.h"
+#include "xfpolkit-listener.h"
 
 static GOptionEntry option_entries[] =
 {
@@ -74,7 +74,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    listener = lxpolkit_listener_new();
+    listener = xfpolkit_listener_new();
     session = polkit_unix_session_new_for_process_sync(getpid(), NULL, NULL);
 
     if(!polkit_agent_register_listener(listener, session, NULL, &err))

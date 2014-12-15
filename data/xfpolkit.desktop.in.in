@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-_Name=LXPolKit
+_Name=XfPolKit
 _Comment=Policykit Authentication Agent
 Exec=@FULL_LIBEXECDIR@/xfpolkit
 Icon=gtk-dialog-authentication

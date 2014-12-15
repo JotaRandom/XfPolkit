@@ -1,11 +1,11 @@
-# Dutch translation of the lxpolkit package.
-# Copyright (C) the author of the lxpolkit package.
+# Dutch translation of the xfpolkit package.
+# Copyright (C) the author of the xfpolkit package.
 # This file is distributed under the same license as the 
-# lxpolkit package.
+# xfpolkit package.
 # Pjotr, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: lxpolkit\n"
+"Project-Id-Version: xfpolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:20+0200\n"
 "PO-Revision-Date: 2014-01-28 14:40+0000\n"
@@ -19,31 +19,31 @@ msgstr ""
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1390920057.0\n"
 
-#: ../data/lxpolkit.desktop.in.in.h:1
+#: ../data/xfpolkit.desktop.in.in.h:1
 msgid "LXPolKit"
 msgstr "LXPolKit"
 
-#: ../data/lxpolkit.desktop.in.in.h:2
+#: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
 msgstr "Policykit authenticatie-agent"
 
-#: ../data/ui/lxpolkit.glade.h:1
+#: ../data/ui/xfpolkit.glade.h:1
 msgid "Authentication"
 msgstr "Authenticatie"
 
-#: ../data/ui/lxpolkit.glade.h:2
+#: ../data/ui/xfpolkit.glade.h:2
 msgid "Identity:"
 msgstr "Identiteit:"
 
-#: ../src/lxpolkit.c:45
+#: ../src/xfpolkit.c:45
 msgid "Error"
 msgstr "Fout"
 
-#: ../src/lxpolkit.c:48
+#: ../src/xfpolkit.c:48
 msgid "Information"
 msgstr "Informatie"
 
-#: ../src/lxpolkit-listener.c:91
+#: ../src/xfpolkit-listener.c:91
 msgid ""
 "Authentication failed!\n"
 "Wrong password?"
@@ -51,11 +51,11 @@ msgstr ""
 "Authenticatie mislukt.\n"
 "Verkeerd wachtwoord?"
 
-#: ../src/lxpolkit-listener.c:109
+#: ../src/xfpolkit-listener.c:109
 msgid "Password: "
 msgstr "Wachtwoord: "
 
-#: ../src/lxpolkit-listener.c:254
+#: ../src/xfpolkit-listener.c:254
 #, c-format
 msgid "Group: %s"
 msgstr "Groep: %s"

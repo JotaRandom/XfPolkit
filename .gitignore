@@ -1,0 +1,85 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+#temp files
+*.swp
+
+# Makefile
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache
+compile
+config.guess
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+configure
+configure.in
+depcomp
+install-sh
+intltool-*
+libtool
+ltmain.sh
+mkinstalldirs
+missing
+stamp-h1
+.*.swp
+*.tar.bz2
+*.tar.gz
+core.*
+core
+*.core
+*.desktop
+*.desktop.in
+*.service
+*.appdata.xml
+gtk-doc.make
+xfpolkit
+src/xfpolkit
+*.spec
+po-doc/.*.swp
+po-doc/.xml2po.mo
+po/Makefile.in.in
+po/.*.swp
+po/*.gmo
+po/*.mo
+po/POTFILES
+po/.intltool-merge-cache
+po/stamp-*
+*.o
+*.lo
+*.la
+.libs
+.deps
+config.h.in~
+
