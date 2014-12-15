@@ -3,5 +3,6 @@ Type=Application
 _Name=XfPolKit
 _Comment=Policykit Authentication Agent
 Exec=@FULL_LIBEXECDIR@/xfpolkit
+TryExec=@FULL_LIBEXECDIR@/xfpolkit
 Icon=gtk-dialog-authentication
 NotShowIn=GNOME;KDE;MATE;Razor;LxQT;
