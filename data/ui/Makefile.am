@@ -1,9 +1,9 @@
 NULL=
 
 # GtkBuilder UI definition files
-uidir=$(datadir)/lxpolkit/ui
+uidir=$(datadir)/xfpolkit/ui
 ui_in_files= \
-	lxpolkit.glade \
+	xfpolkit.glade \
 	$(NULL)
 ui_DATA = $(ui_in_files:.glade=.ui)
 

@@ -1,10 +1,10 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-prog_name = lxpolkit
+prog_name = xfpolkit
 
 AC_PREREQ([2.63])
-AC_INIT([lxpolkit], [0.1.0], [http://lxde.org/])
+AC_INIT([xfpolkit], [0.1.0], [http://lxde.org/])
 AM_INIT_AUTOMAKE([-Wall  foreign no-dist-gzip dist-xz])
 
 AC_CONFIG_HEADERS([config.h])
@@ -88,7 +88,7 @@ do
     echo $lang >> $srcdir/po/LINGUAS
 done
 
-GETTEXT_PACKAGE=lxpolkit
+GETTEXT_PACKAGE=xfpolkit
 AC_SUBST(GETTEXT_PACKAGE)
 AM_GLIB_GNU_GETTEXT
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
@@ -113,7 +113,7 @@ if test x"$sysconfdir" != x'/etc'; then
     echo
 else
     echo
-    echo lxpolkit....................... : Version $VERSION
+    echo xfpolkit....................... : Version $VERSION
     echo
     echo Enable GTK3 support.............: "$enable_gtk3"
     echo Enable debug....................: "$enable_debug"
@@ -123,6 +123,6 @@ else
     echo
     echo http://lxde.org/
     echo
-    echo "Ready to make lxpolkit. Type 'make' to continue."
+    echo "Ready to make xfpolkit. Type 'make' to continue."
     echo
 fi
