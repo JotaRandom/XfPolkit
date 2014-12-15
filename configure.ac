@@ -121,7 +121,7 @@ else
     echo
     echo The binary will be installed in $prefix/bin
     echo
-    echo http://lxde.org/
+    echo http://xfce.org/
     echo
     echo "Ready to make xfpolkit. Type 'make' to continue."
     echo
