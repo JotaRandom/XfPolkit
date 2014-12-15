@@ -1,27 +1,28 @@
 # Dutch translation of the xfpolkit package.
 # Copyright (C) the author of the xfpolkit package.
-# This file is distributed under the same license as the 
+# This file is distributed under the same license as the
 # xfpolkit package.
 # Pjotr, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfpolkit\n"
+"Project-Id-Version: XfPolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:20+0200\n"
-"PO-Revision-Date: 2014-01-28 14:40+0000\n"
-"Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
-"Language-Team: Dutch\n"
+"PO-Revision-Date: 2014-12-15 01:35-0400\n"
+"Last-Translator: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"X-Generator: Poedit 1.6.11\n"
 "X-POOTLE-MTIME: 1390920057.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../data/xfpolkit.desktop.in.in.h:1
-msgid "LXPolKit"
-msgstr "LXPolKit"
+msgid "XfPolKit"
+msgstr "XfPolKit"
 
 #: ../data/xfpolkit.desktop.in.in.h:2
 msgid "Policykit Authentication Agent"
