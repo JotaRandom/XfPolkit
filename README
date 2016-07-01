@@ -6,4 +6,7 @@ __XfPolkit__
 
 
 
-XdPolkit is a simple PolicyKit authentication agent for XFCE(http://fce.org).
+XfPolkit is a simple PolicyKit authentication agent for XFCE(http://xfce.org).
+
+For use this you need that the runned program have a polkit directrice so it will call
+the polkit provider (this) also pkexec should be installed to do the task.
